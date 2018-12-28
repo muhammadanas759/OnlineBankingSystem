@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="486.0" prefWidth="594.0" styleClass="FXMLDocument" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <Label prefHeight="31.0" prefWidth="381.0" text="ENTER ADIMN PASSWORD" textAlignment="CENTER" textFill="#bcc9cd">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <PasswordField fx:id="Adminpassword" onAction="#AdminPasswordTextField" opacity="0.63" prefHeight="42.0" prefWidth="255.0" promptText="xxxx(4-characters only)" style="-fx-background-color: #ffffff; -fx-cursor: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <VBox.margin>
+            <Insets left="200.0" right="200.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Button fx:id="submitpass" alignment="CENTER" mnemonicParsing="false" onAction="#Adminpasswordsubmit" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #07489d;" text="Submit" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="0.7471264367816092" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="back" alignment="CENTER" mnemonicParsing="false" onAction="#back" opacity="0.73" prefHeight="37.0" prefWidth="219.0" style="-fx-background-color: #d3cbcb;" text="BACK" textAlignment="CENTER">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Button>
+      <Label fx:id="pass_correct" prefHeight="27.0" prefWidth="103.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.6904761904761905" startX="0.9380952380952381" startY="0.10952380952380952">
+               <stops>
+                  <Stop color="#2ffa14" />
+                  <Stop color="#f51c1c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

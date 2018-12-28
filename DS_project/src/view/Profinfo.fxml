@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" prefHeight="601.0" prefWidth="781.0" styleClass="FXMLDocument" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfinfoController">
+   <children>
+      <Label prefHeight="65.0" prefWidth="746.0" text="- Interest rate of monthly saving account is 0.4%" textFill="#76dbd8" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label prefHeight="37.0" prefWidth="684.0" text="- Interest rate of fixed deposit account is:" textFill="#76dbd8" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Label prefHeight="28.0" prefWidth="278.0" text="    5% for 1 year" textFill="#76dbd8" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="25.0" prefWidth="267.0" text="    5.22% for 3 years" textFill="#76dbd8" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="19.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="25.0" prefWidth="268.0" text="    5.39% for 5 years" textFill="#76dddb" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="25.0" prefWidth="278.0" text="    6.35% for 10 years" textFill="#76dbd8" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="back" mnemonicParsing="false" onAction="#back" opacity="0.74" prefHeight="49.0" prefWidth="419.0" style="-fx-background-color: #d3cbcb;" text="BACK">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
